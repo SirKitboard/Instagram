@@ -1,0 +1,6 @@
+framework module Pods_Instapics {
+  umbrella header "Pods-Instapics-umbrella.h"
+
+  export *
+  module * { export * }
+}
