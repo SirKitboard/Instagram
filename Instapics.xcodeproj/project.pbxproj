@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3C838764075CD0A40BB7B728 /* Pods_Instapics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47EA2D6CE58D6C9B9FC9C71E /* Pods_Instapics.framework */; };
 		40066DF31C8E571100164104 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40066DF21C8E571100164104 /* LoginViewController.swift */; };
+		40066DF51C8EAABC00164104 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40066DF41C8EAABC00164104 /* HomeViewController.swift */; };
+		403EDCFC1C8EBC130089EDE9 /* InstapicsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403EDCFB1C8EBC130089EDE9 /* InstapicsTableViewCell.swift */; };
 		405386B11C8D550C001B2A4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405386B01C8D550C001B2A4D /* AppDelegate.swift */; };
 		405386B31C8D550C001B2A4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405386B21C8D550C001B2A4D /* ViewController.swift */; };
 		405386B61C8D550C001B2A4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 405386B41C8D550C001B2A4D /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 		1364B9274CA882EB205BB76A /* Pods-Instapics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instapics.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instapics/Pods-Instapics.release.xcconfig"; sourceTree = "<group>"; };
 		333D918E5F0845B9BE5D60E4 /* Pods-Instapics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instapics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instapics/Pods-Instapics.debug.xcconfig"; sourceTree = "<group>"; };
 		40066DF21C8E571100164104 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		40066DF41C8EAABC00164104 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		403EDCFB1C8EBC130089EDE9 /* InstapicsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstapicsTableViewCell.swift; sourceTree = "<group>"; };
 		405386AD1C8D550C001B2A4D /* Instapics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instapics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		405386B01C8D550C001B2A4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		405386B21C8D550C001B2A4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				405386B01C8D550C001B2A4D /* AppDelegate.swift */,
+				40066DF41C8EAABC00164104 /* HomeViewController.swift */,
+				403EDCFB1C8EBC130089EDE9 /* InstapicsTableViewCell.swift */,
 				405386B21C8D550C001B2A4D /* ViewController.swift */,
 				40066DF21C8E571100164104 /* LoginViewController.swift */,
 				405386B41C8D550C001B2A4D /* Main.storyboard */,
@@ -215,7 +221,9 @@
 			files = (
 				40066DF31C8E571100164104 /* LoginViewController.swift in Sources */,
 				405386B31C8D550C001B2A4D /* ViewController.swift in Sources */,
+				403EDCFC1C8EBC130089EDE9 /* InstapicsTableViewCell.swift in Sources */,
 				405386B11C8D550C001B2A4D /* AppDelegate.swift in Sources */,
+				40066DF51C8EAABC00164104 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

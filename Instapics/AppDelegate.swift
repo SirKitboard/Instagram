@@ -19,6 +19,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         Parse.setApplicationId("Of6mdWAJD5Pahn4vqpoMFy1QKIgB0674csjIuDRF",
             clientKey: "dfpJJyo54zg39TKwzBoY1hT1rzhm79GQ2PY9uDnR")
+        
+        if PFUser.currentUser() != nil {
+            
+            let storyboard = UIStoryboard(name:"Main", bundle: nil)
+            
+            let vc = storyboard.instantiateViewControllerWithIdentifier("HomeViewController")
+            
+            window?.rootViewController = vc
+            print("User already logged in")
+        }
+        
+        NSNotificationCenter.defaultCenter().addObserverForName("UserDidLogout", object: nil, queue: NSOperationQueue.mainQueue()) { (notif: NSNotification) -> Void in
+            let storyboard = UIStoryboard(name:"Main", bundle: nil)
+            
+            let vc = storyboard.instantiateInitialViewController()
+            
+            self.window?.rootViewController = vc
+            
+        }
+        
         return true
     }
 

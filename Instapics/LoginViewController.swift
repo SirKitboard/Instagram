@@ -32,8 +32,14 @@ class LoginViewController: UIViewController {
             if let error = error {
                 print("User login failed.")
                 print(error.localizedDescription)
+                let alert = UIAlertView()
+                alert.title = "Error"
+                alert.message = error.localizedDescription
+                alert.addButtonWithTitle("OK")
+                alert.show()
             } else {
                 print("User logged in successfully")
+                self.performSegueWithIdentifier("loggedIn", sender: nil)
                 // display view controller that needs to shown after successful login
             }
         }
@@ -51,8 +57,14 @@ class LoginViewController: UIViewController {
         newUser.signUpInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
             if let error = error {
                 print(error.localizedDescription)
+                let alert = UIAlertView()
+                alert.title = "Error"
+                alert.message = error.localizedDescription
+                alert.addButtonWithTitle("OK")
+                alert.show()
             } else {
                 print("User Registered successfully")
+                self.performSegueWithIdentifier("loggedIn", sender: nil)
                 // manually segue to logged in view
             }
         }
